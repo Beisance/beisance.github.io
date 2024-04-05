@@ -1,0 +1,307 @@
+<!-- @package WordPress adapted -->
+<!-- @subpackage adapted Beisance-Intelix Custom Theme For Beisance-BSX -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="shortcut icon" href="img/header/favicons/favicon.png"/>
+<link href="img/header/favicons/favicon-touch-icon-iphone-114x114.png" rel="apple-touch-icon" />
+<link href="img/header/favicons/favicon-normal-128x128.png" rel="icon" sizes="128x128" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-retina-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="img/header/favicons/favicon-touch-icon-iphone-retina-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="img/header/favicons/favicon-hires-192x192.png" rel="icon" sizes="192x192" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!-- our foray into web type/fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+
+<!-- social sharing -->
+<meta property="og:title" content="Beisance"/>
+<meta property="og:description" content="Beisance"/>
+<meta property="og:type" content="image/png">
+<meta property="og:url" content="https://beisance.com">
+<meta property="og:image" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:url" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1920">
+<meta property="og:image:alt" content="Beisance logo"/>
+
+<!-- browser header color customization -->
+<meta name="theme-color" content="#fff1e5" />
+<!-- other -->
+<meta name="color-scheme" content="light dark">
+<meta charset="<?php bloginfo( 'charset' ); ?>"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="BSX">
+<meta name="author" content="Beisance Intelix">
+<meta name="keywords" content="global infrastructure, transportation, housing, digital technology, finance, ecommerce and retail, energy, food and beverages, uae, ras al-khaimah, rak, abu dhabi"/>
+<meta name="format-detection" content="telephone=no">
+
+<title>
+Beisance
+</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://beisance.com"/>
+
+</head>
+
+<body class="mb">
+
+<!-- js scripts -->
+<script src="js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+<script src="js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
+<script src="js/js-window-resize.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-search.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-mobile-menu.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close-on-scroll.js" integrity="" crossorigin="anonymous"></script>
+
+<!-- topnav -->
+<div id="header-container-background" class="hcb">
+	<div id="header-container-background-content" class="hcb-content">
+	</div>
+</div>
+
+<div id="header-container" class="hc"><!-- start #header-container-->
+	<div id="header-container-content" class="hcc hcc-m hcc-d">
+		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
+			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="img/header/topnav-menu-button.png">
+		</div>
+		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
+			<a href ="./">
+				<img src="img/header/logo.png"/>
+			</a>
+		</div><!-- end #logo-->
+		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
+			<div id="search-menu-close">
+				<a href ="#" onclick="return false;">
+					<img id="search-menu-close-img" onclick="searchMenuclose()" class="smcl" src="img/header/search-menu-close.png">
+				</a>
+			</div>
+			<!-- search form desktop-->
+            <div id="search-form-desktop">
+                <!-- class definition legend in comments below this-->
+                <!-- tnsfb = 'topnav search form"-->
+                <!-- sb = 'search-box"-->
+                <!-- si = 'search input"-->
+                <!-- search submit is placed before search box, for desktop-->
+                <form method="get" id="search-form-desktop" class="tnsf tnsf-m" action="./">
+                    <input type="image" id="search-submit-desktop" src="img/header/search-icon.png" value="Search" />	
+                    <input type="text"  tabindex="0" placeholder="Search Beisance" value="" name="s" id="search-box-desktop" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />	
+                </form>
+			</div>
+		</div><!-- end #search-->
+		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
+			<ul id="menu-topnav" class="menu">
+                <li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="./">The Firm</a></li>
+                <li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="./contacts.html">Contacts</a></li>
+                <li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="./support.html">Support</a></li>
+                <li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+            </ul>
+		</div><!-- end #topnav-->
+	</div>
+	
+	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
+		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
+			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+				<div id="mobile-header" class="mh">
+					<div id="mobile-header-content" class="mhc"">
+						<div id="mobile-logo" class="ml">
+							<a href ="./">
+								<img id="logo-mobile-image" src="img/header/logo-none.png"/>
+							</a>
+						</div>
+						<div id="mobile-menu-button-close" class="mmbc">
+							<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="img/header/mobile-menu-close.png">
+						</div>
+					</div>
+				</div>
+				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
+					<span class="smi">
+                        <ul id="menu-topnav-1" class="menu">
+							<li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="./">The Firm</a></li>
+							<li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="./contacts.html">Contacts</a></li>
+							<li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="./support.html">Support</a></li>
+							<li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+                        </ul>
+					</span>
+				</div>
+				<div id="search-mobile" class="tnsm tnsm-m tnsm-d"><!-- start #search-->
+					<!-- search form mobile-->
+                    <div id="search-form-mobile">
+						<!-- class definition legend in commments below this-->
+                        <!-- tnsfb = 'topnav search form"-->
+                        <!-- sb = 'search-box"-->
+                        <!-- si = 'search input"-->
+                        <form method="get" id="sfm" class="tnsf tnsf-m" action="./">	
+                            <div id="search-container">
+                            <input type="image" id="search-submit-mobile" src="img/header/search-icon.png" value="Search" />	
+                            <input type="text" placeholder="Search Beisance" value="" name="s" id="search-box-mobile" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />
+                            </div>
+                        </form>
+					</div>
+				</div><!-- end #search-->
+			</div>	
+		</div>
+	</div><!-- end #topnav-mobile-menu-->	
+	<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
+	</div>
+</div><!-- end #header-container-->
+
+<!-- the firm content-->
+<div id="socket-main" class="sm-page"><!--start #socket-main-->	
+	<div id="socket-main-content" class="smc-frontpage"><!--start #socket-main-content-->		
+		<div id="socket-main-content-page" class="smcp"><!--start #socket-main-content-page-->	
+			<div id="socket-main-content-page-content" class="smcpc">
+				<div id="socket-header-stack-delimiter-page" class="shsdp">
+				</div>
+				<div id="socket-header" class="sh-page">
+					Privacy Policy				
+				</div>
+				<div id="page-showcase" class="ps">
+					
+	<div id="page-showcase"><!-- start #page-showcase-->
+		<div id="page-showcase-content" class="psc psc-m psc-d"><!-- start #page-showcase-content-->
+			<a href="./">
+				<picture id="picture-showcase">
+                    <source media="(max-width: 1099px)" srcset="img/showcase/page/page-showcase-5-legal-960w.png">
+                    <source media="(min-width: 800px)" srcset="img/showcase/page/page-showcase-5-legal-1920w.png">
+                    <img src="img/showcase/page/page-showcase-5-legal-1920w.png" alt="Legal Policy at Beisance">
+                </picture>				
+			</a>	
+		</div><!-- end #page-showcase-content-->
+	</div><!-- end #page-showcase-->
+
+    <div id="each-post-news-stack" class="post epns-page" id="post-18"><!-- start #each-post-->
+		
+        <div id="each-post-summary-news-stack">
+            <div id="each-post-excerpt-single">
+                
+    <p>Beisance’s Customer Privacy Policy covers the collection, use, and disclosure of personal information that may be collected by Beisance anytime you interact with Beisance, such as when you visit our website, when you purchase Beisance products and services, or when you call our sales or support associates.</p>
+    
+    <p>Please take a moment to read the following to learn more about our information practices, including what type of information is gathered, how the information is used and for what purposes, to whom we disclose the information, and how we safeguard your personal information. Your privacy is a priority at Beisance, and we go to great lengths to protect it.</p>
+    
+    <h2 class="wp-block-heading">Why we collect personal information</h2>
+    
+    <p>We collect your personal information because it helps us deliver a superior level of customer service. It enables us to give you convenient access to our products and services and focus on categories of greatest interest to you. In addition, your personal information helps us keep you posted on the latest product announcements, software updates, special offers, and events that you might like to hear about.<br />If you do not want Beisance to keep you up to date with Beisance news, software updates and the latest information on products and services please contact us.</p>
+    
+    <h2 class="wp-block-heading">What information we collect and how we may use it</h2>
+    
+    <p>There are a number of situations in which your personal information may help us give you better products. For example:</p>
+    
+    <ul>
+    <li>We may ask for your personal information when you’re discussing a service issue on the phone with an associate, downloading a software update, registering for a seminar, participating in an online survey, registering your products, or purchasing a product or service.</li>
+    <li>When you interact with Beisance, we may collect personal information relevant to the situation, such as your name, mailing address, phone number, email address, and contact preferences; your credit card information and information about the Beisance products you own, such as their serial numbers and date of purchase; and information relating to a support or service issue.</li>
+    <li>We also collect information for market research purposes — such as your occupation and where you use your computer &#8211; to gain a better understanding of our customers and thus provide more valuable service.</li>
+    <li>We collect information regarding customer activities on our websites, Flight Cars and the iSance. This helps us to determine how best to provide useful information to customers and to understand which parts of our websites, products, and Internet services are of most interest to them.</li>
+    <li>We may use personal information to provide products that you have requested as well as for auditing, research, and analysis to improve Beisance’s products/services.</li>
+    </ul>
+    
+    <h2 class="wp-block-heading">Your Beisance ID and related information</h2>
+    
+    <p>The Beisance website, as well as Beisance other services, allows you to create an “Beisance ID” based on your personal information. This convenient service saves you time and allows for easier use of our web services. Here’s how it works: You create a personal profile — providing your name, phone number, email address, and in some cases your mailing address or a credit card number — and choose a password and password hint (such as the month and day of your birth) for security. The system saves your information and assigns you a personal Beisance ID — in many cases simply your email address, because it’s unique and easy to remember. The next time you order from Beisance’s Stores or register a new product, all you need to do is enter your Beisance ID and password; the system looks up the information it needs to assist you. In addition, if you update the information associated with your Beisance ID it will be available for all your transactions with Beisance globally.</p>
+    
+    <h2 class="wp-block-heading">Publicly displayed information is public</h2>
+    
+    <p>If you use a bulletin board or chat room on a Beisance website you should be aware that any information you share is visible to other users. Personally identifiable information you submit to one of these forums can be read, collected, or used by other individuals to send you unsolicited messages. Beisance is not responsible for the personally identifiable information you choose to submit in these forums. For example, if you choose to make information, which was previously non-public, available by enabling certain user features, Beisance will collect that information from your interaction and the information will become publicly available.</p>
+    
+    <h2 class="wp-block-heading">When we disclose your information</h2>
+    
+    <p>Beisance takes your privacy very seriously. Beisance does not sell or rent your contact information to other marketers.</p>
+    
+    <h2 class="wp-block-heading">Within the Beisance Group</h2>
+    
+    <p>To help us provide superior service, your personal information may be shared with legal entities within the Beisance group globally who will take steps to safeguard it in accordance with Beisance’s privacy policy.</p>
+    
+    <h2 class="wp-block-heading">With our service providers, vendors, and strategic partners</h2>
+    
+    <p>There are also times when it may be advantageous for Beisance to make certain personal information about you available to companies that Beisance has a strategic relationship with or that perform work for Beisance to provide products and services to you on our behalf. These companies may help us process information, extend credit, fulfil customer orders, deliver products to you, manage and enhance customer data, provide customer service, assess your interest in our products and services, or conduct customer research or satisfaction surveys. These companies are also obligated to protect your personal information in accordance with Beisance’s policies, except if we inform you otherwise at the time of collection. For example, when you purchase and activate Blackberry services via Beisance, you authorize Beisance and its carrier to exchange the information that you provide during the activation process to carry out service. If you are approved for service, your account will be governed by Beisance and its carrier’s respective privacy policies. Without such information being made available, it would be difficult for you to purchase products, have products delivered to you, receive customer service, provide us feedback to improve our products and services, or access certain services, offers, and content on the Beisance website.</p>
+    
+    <p>At times we may be required by law or litigation to disclose your personal information. We may also disclose information about you if we determine that for national security, law enforcement, or other issues of public importance, disclosure is necessary.</p>
+    
+    <h2 class="wp-block-heading">How we protect your personal information</h2>
+    
+    <p>Beisance takes precautions — including administrative, technical, and physical measures — to safeguard your personal information against loss, theft, and misuse, as well as unauthorized access, disclosure, alteration, and destruction.</p>
+    
+    <p>The Beisance Online Stores/Services use Secure Sockets Layer (SSL) encryption on all web pages where personal information is required. To make purchases from the Beisance Online Stores/Services, you must use an SSL-enabled browser such as Chrome, Firefox, Safari, Netscape Navigator 3.0 or later, or Internet Explorer. Doing so protects the confidentiality of your personal and credit card information while it’s transmitted over the Internet.</p>
+    
+    <p>You can help us by also taking precautions to protect your personal data when you are on the Internet. Change your passwords often using a combination of letters and numbers, and make sure you use a secure web browser like Chrome.</p>
+    
+    <h2 class="wp-block-heading">Integrity of your personal information</h2>
+    
+    <p>Beisance has safeguards in place to keep your personal information accurate, complete, and up to date for the purposes for which it is used. Naturally, you always have the right to access and correct the personal information you have provided. You can help us ensure that your contact information and preferences are accurate, complete, and up to date by checking at www.beisance.com/contact/. And you can request a copy of your personal information, your product registration history, and your interactions with our sales and support agents by contacting us at the email address: <a href="ma&#105;&#108;&#116;&#x6f;&#x3a;&#x63;&#x6f;nt&#97;&#99;&#116;&#x40;&#x62;&#x65;&#x69;sa&#110;&#99;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#111;n&#x74;&#97;c&#x74;&#x40;&#98;&#x65;&#x69;&#115;a&#x6e;&#99;e&#x2e;&#x63;&#111;&#x6d;</a></p>
+    
+    <h2 class="wp-block-heading">Kids</h2>
+    
+    <p>Beisance recognizes that parents, guardians, or other adults often purchase our products for family use, including use by minors. We do not knowingly collect personal information from children under 13 for marketing purposes, but because some information is collected electronically, it can appear to be the personal information of the Beisance purchaser of the product, and will be treated as such by this privacy policy. If a child under 13 submits personal information to Beisance and we learn that that personal information is the information of a child under 13, we will attempt to delete the information as soon as possible.</p>
+    
+    <h2 class="wp-block-heading">Cookies and other technologies</h2>
+    
+    <p>As is standard practice on many corporate websites, Beisance’s website uses “cookies” and other technologies to help us understand which parts of our websites are the most popular, where our visitors are going, and how much time they spend there. We also use cookies and other technologies to make sure that our online advertising is bringing customers to our products and services, such as Intelix &amp; Cirence. We use cookies and other technologies to study traffic patterns on our website, to make it even more rewarding as well as to study the effectiveness of our customer communications. And we use cookies to customize your experience and provide greater convenience each time you interact with us. For example, knowing your first name lets us welcome you with a greeting the next time you visit the Beisance Stores/Services. Information such as your country and language — and if you’re an educator, your school — helps us provide a more useful online shopping experience. And your contact information, product serial numbers, and information about your computer helps us register your products and provide you with customer service.</p>
+    
+    <p>Please note that certain features of the Beisance website will not be available once cookies are disabled.</p>
+    
+    <p>As is true of most websites, we gather certain information automatically and store it in log files. This information includes Internet Protocol (IP) addresses, browser type, Internet Service Provider (ISP), referring/exit pages, operating system, date/time stamp, and clickstream data.<br />We use this information, which does not identify individual users, to analyze trends, to administer the site, to track users’ movements around the site and to gather demographic information about our user base as a whole. Beisance will not use the information collected to market directly to that person.<br />In some of our email messages we use a “click-through URL” linked to content on the Beisance website. When customers click one of these URLs, they pass through our web server before arriving at the destination web page. We track this click-through data to help us determine interest in particular topics and measure the effectiveness of our customer communications. If you prefer not to be tracked simply avoid clicking text or graphic links in the email.</p>
+    
+    <p>In addition we use pixel tags — tiny graphic images — to tell us what parts of our website customers have visited or to measure the effectiveness of searches customers perform on our site.<br />Pixel tags also enable us to send email messages in a format customers can read. And they tell us whether emails have been opened to ensure that we’re sending only messages that are of interest to our customers. We may use this information to reduce or eliminate messages sent to a customer. We store all of this information in a secure database located in Isolo, Lagos, in the Federal Republic of Nigeria.</p>
+    
+    <h2 class="wp-block-heading">Our companywide commitment to your privacy</h2>
+    
+    <p>As we said, Beisance takes protecting your privacy very seriously. To make sure your personal information is secure, we communicate these guidelines to Beisance employees and strictly enforce privacy safeguards within the company. In addition, Beisance supports industry initiatives, such as TRUSTe, to preserve privacy rights on the Internet and in all aspects of electronic commerce.</p>
+    
+    <h2 class="wp-block-heading">International users</h2>
+    
+    <p>Beisance’s website has links to the sites of other companies. Beisance is not responsible for their privacy practices. We encourage you to learn about the privacy policies of those companies.</p>
+    
+    <h2 class="wp-block-heading">Privacy Questions</h2>
+    
+    <p>If you have questions or concerns about Beisance’s Customer Privacy Policy or data processing, please use this email address to contact us: &#x63;o&#x6e;&#116;a&#x63;&#116;&#x40;&#x62;e&#x69;&#115;a&#x6e;&#99;&#x65;&#46;c&#x6f;&#109;. The Beisance Data Controller will respond to your inquiry within 30 days.</p>
+    
+    <p>The information contained in this web site is subject to change without notice. Copyright © Beisance Ltd. All rights reserved.</p>
+    
+    <p>Beisance NG., 74 Ire Akari Estate Road, Isolo, Lagos, Nigeria. P.0.Box 53365, Falomo Ikoyi SW, Lagos, Nigeria.</p>
+    <p>Beisance UAE., Abu Dhabi Chamber of Commerce &amp; Industry, Abu Dhabi Chamber Building, Corniche Street. Abu Dhabi, United Arab Emirates.</p>
+            </div>
+        </div>
+        
+    </div><!-- end #each-post-->			</div>	
+            </div><!--end #socket-main-content-page-->
+        </div><!--end #socket-main-content-->				  
+    
+</div><!-- end #socket-main-->
+
+<!--downnav-->
+<div id="downnav"><!-- start #downnav-->
+	<div id="downnav-content"><!-- start #downnav-content-->
+		<div id="downnav-call-to-action" class="dca dca-m dca-d">
+			Beisance. It's time to build.		
+		</div>
+		<div id="downnav-menu" class="dnm dnm-m dnm-d">
+			<ul id="menu-downnav" class="menu"><li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-1908"><a href="./" aria-current="page">The Firm</a></li>
+			<li id="menu-item-1911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1911"><a href="./privacy-policy.html">Privacy Policy</a></li>
+			<li id="menu-item-1910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="./legal.html">Legal</a></li>
+			<li id="menu-item-1912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1912"><a href="./sitemap.html">Sitemap</a></li>
+			</ul>		
+		</div>
+		<div id="downnav-copyright" class="dncr dncr-m dncr-d">
+			<a href="https://www.beisance.com">Beisance</a>.			Copyright &#169; 2024. All rights reserved.
+		</div>
+	</div><!-- end #downnav-content-->
+</div><!-- end #downnav-->
+
+</body>
+
+</html>
