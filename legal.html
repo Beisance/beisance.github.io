@@ -1,0 +1,335 @@
+<!-- @package WordPress adapted -->
+<!-- @subpackage adapted Beisance-Intelix Custom Theme For Beisance-BSX -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="shortcut icon" href="img/header/favicons/favicon.png"/>
+<link href="img/header/favicons/favicon-touch-icon-iphone-114x114.png" rel="apple-touch-icon" />
+<link href="img/header/favicons/favicon-normal-128x128.png" rel="icon" sizes="128x128" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-retina-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="img/header/favicons/favicon-touch-icon-iphone-retina-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="img/header/favicons/favicon-hires-192x192.png" rel="icon" sizes="192x192" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!-- our foray into web type/fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+
+<!-- social sharing -->
+<meta property="og:title" content="Beisance"/>
+<meta property="og:description" content="Beisance"/>
+<meta property="og:type" content="image/png">
+<meta property="og:url" content="https://beisance.com">
+<meta property="og:image" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:url" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1920">
+<meta property="og:image:alt" content="Beisance logo"/>
+
+<!-- browser header color customization -->
+<meta name="theme-color" content="#fff1e5" />
+<!-- other -->
+<meta name="color-scheme" content="light dark">
+<meta charset="<?php bloginfo( 'charset' ); ?>"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="BSX">
+<meta name="author" content="Beisance Intelix">
+<meta name="keywords" content="global infrastructure, transportation, housing, digital technology, finance, ecommerce and retail, energy, food and beverages, uae, ras al-khaimah, rak, abu dhabi"/>
+<meta name="format-detection" content="telephone=no">
+
+<title>
+Beisance
+</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://beisance.com"/>
+
+</head>
+
+<body class="mb">
+
+<!-- js scripts -->
+<script src="js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+<script src="js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
+<script src="js/js-window-resize.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-search.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-mobile-menu.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close-on-scroll.js" integrity="" crossorigin="anonymous"></script>
+
+<!-- topnav -->
+<div id="header-container-background" class="hcb">
+	<div id="header-container-background-content" class="hcb-content">
+	</div>
+</div>
+
+<div id="header-container" class="hc"><!-- start #header-container-->
+	<div id="header-container-content" class="hcc hcc-m hcc-d">
+		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
+			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="img/header/topnav-menu-button.png">
+		</div>
+		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
+			<a href ="./">
+				<img src="img/header/logo.png"/>
+			</a>
+		</div><!-- end #logo-->
+		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
+			<div id="search-menu-close">
+				<a href ="#" onclick="return false;">
+					<img id="search-menu-close-img" onclick="searchMenuclose()" class="smcl" src="img/header/search-menu-close.png">
+				</a>
+			</div>
+			<!-- search form desktop-->
+            <div id="search-form-desktop">
+                <!-- class definition legend in comments below this-->
+                <!-- tnsfb = 'topnav search form"-->
+                <!-- sb = 'search-box"-->
+                <!-- si = 'search input"-->
+                <!-- search submit is placed before search box, for desktop-->
+                <form method="get" id="search-form-desktop" class="tnsf tnsf-m" action="./">
+                    <input type="image" id="search-submit-desktop" src="img/header/search-icon.png" value="Search" />	
+                    <input type="text"  tabindex="0" placeholder="Search Beisance" value="" name="s" id="search-box-desktop" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />	
+                </form>
+			</div>
+		</div><!-- end #search-->
+		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
+			<ul id="menu-topnav" class="menu">
+                <li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="./">The Firm</a></li>
+                <li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="./contacts.html">Contacts</a></li>
+                <li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="./support.html">Support</a></li>
+                <li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+            </ul>
+		</div><!-- end #topnav-->
+	</div>
+	
+	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
+		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
+			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+				<div id="mobile-header" class="mh">
+					<div id="mobile-header-content" class="mhc"">
+						<div id="mobile-logo" class="ml">
+							<a href ="./">
+								<img id="logo-mobile-image" src="img/header/logo-none.png"/>
+							</a>
+						</div>
+						<div id="mobile-menu-button-close" class="mmbc">
+							<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="img/header/mobile-menu-close.png">
+						</div>
+					</div>
+				</div>
+				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
+					<span class="smi">
+                        <ul id="menu-topnav-1" class="menu">
+							<li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="./">The Firm</a></li>
+							<li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="./contacts.html">Contacts</a></li>
+							<li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="./support.html">Support</a></li>
+							<li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+                        </ul>
+					</span>
+				</div>
+				<div id="search-mobile" class="tnsm tnsm-m tnsm-d"><!-- start #search-->
+					<!-- search form mobile-->
+                    <div id="search-form-mobile">
+						<!-- class definition legend in commments below this-->
+                        <!-- tnsfb = 'topnav search form"-->
+                        <!-- sb = 'search-box"-->
+                        <!-- si = 'search input"-->
+                        <form method="get" id="sfm" class="tnsf tnsf-m" action="./">	
+                            <div id="search-container">
+                            <input type="image" id="search-submit-mobile" src="img/header/search-icon.png" value="Search" />	
+                            <input type="text" placeholder="Search Beisance" value="" name="s" id="search-box-mobile" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />
+                            </div>
+                        </form>
+					</div>
+				</div><!-- end #search-->
+			</div>	
+		</div>
+	</div><!-- end #topnav-mobile-menu-->	
+	<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
+	</div>
+</div><!-- end #header-container-->
+
+<!-- the firm content-->
+<div id="socket-main" class="sm-page"><!--start #socket-main-->	
+	<div id="socket-main-content" class="smc-frontpage"><!--start #socket-main-content-->		
+		<div id="socket-main-content-page" class="smcp"><!--start #socket-main-content-page-->	
+			<div id="socket-main-content-page-content" class="smcpc">
+				<div id="socket-header-stack-delimiter-page" class="shsdp">
+				</div>
+				<div id="socket-header" class="sh-page">
+					Legal				
+				</div>
+				<div id="page-showcase" class="ps">
+					
+	<div id="page-showcase"><!-- start #page-showcase-->
+		<div id="page-showcase-content" class="psc psc-m psc-d"><!-- start #page-showcase-content-->
+			<a href="./">
+				<picture id="picture-showcase">
+                    <source media="(max-width: 1099px)" srcset="img/showcase/page/page-showcase-5-legal-960w.png">
+                    <source media="(min-width: 800px)" srcset="img/showcase/page/page-showcase-5-legal-1920w.png">
+                    <img src="img/showcase/page/page-showcase-5-legal-1920w.png" alt="Legal Policy at Beisance">
+                </picture>				
+			</a>	
+		</div><!-- end #page-showcase-content-->
+	</div><!-- end #page-showcase-->
+
+    <div id="each-post-news-stack" class="post epns-page" id="post-20"><!-- start #each-post-->
+		
+        <div id="each-post-summary-news-stack">
+            <div id="each-post-excerpt-single">
+                
+    <h2 class="wp-block-heading">Ownership of Site; Agreement to Terms of Use</h2>
+    
+    <p>These Terms and Conditions of Use (the “Terms of Use”) apply to the Beisance web site located at www.beisance.com, and all associated sites linked to www.beisance.com by Beisance, its subsidiaries and affiliates, including Beisance sites around the world (collectively, the “Site”).</p>
+    
+    <p>The Site is the property of Beisance Ltd. (“Beisance”) and its licensors. BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE SITE.</p>
+    
+    <p>Beisance reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, Beisance grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.</p>
+    
+    <h2 class="wp-block-heading">Content</h2>
+    
+    <p>All text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork and computer code (collectively, “Content”), including but not limited to the design, structure, selection, coordination, expression, “look and feel” and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to Beisance, and is protected by trade dress, copyright, patent and trademark laws, and various other intellectual property rights and unfair competition laws.</p>
+    
+    <p>Except as expressly provided in these Terms of Use, no part of the Site and no Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way (including “mirroring”) to any other computer, server, Web site or other medium for publication or distribution or for any commercial enterprise, without Beisance’s express prior written consent.</p>
+    
+    <p>You may use information on Beisance products and services (such as data sheets, knowledge base articles, and similar materials) purposely made available by Beisance for downloading from the Site, provided that you (1) not remove any proprietary notice language in all copies of such documents, (2) use such information only for your personal, non-commercial informational purpose and do not copy or post such information on any networked computer or broadcast it in any media, (3) make no modifications to any such information, and (4) not make any additional representations or warranties relating to such documents.</p>
+    
+    <h2 class="wp-block-heading">Your Use of the Site</h2>
+    
+    <p>You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Site. Beisance reserves the right to bar any such activity.</p>
+    
+    <p>You may not attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site or to any Beisance server, or to any of the services offered on or through the Site, by hacking, password “mining” or any other illegitimate means.<br />You may not probe, scan or test the vulnerability of the Site or any network connected to the Site, nor breach the security or authentication measures on the Site or any network connected to the Site. You may not reverse look-up, trace or seek to trace any information on any other user of or visitor to the Site, or any other customer of Beisance, including any Beisance account not owned by you, to its source, or exploit the Site or any service or information made available or offered by or through the Site, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Site.</p>
+    
+    <p>You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Site or Beisance’s systems or networks, or any systems or networks connected to the Site or to Beisance.<br />You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Site or any transaction being conducted on the Site, or with any other person’s use of the Site.</p>
+    
+    <p>You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Beisance on or through the Site or any service offered on or through the Site. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity.</p>
+    
+    <p>You may not use the Site or any Content for any purpose that is unlawful or prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Beisance or others.</p>
+    
+    <h2 class="wp-block-heading">Purchases; Other Terms and Conditions</h2>
+    
+    <p>Additional terms and conditions may apply to purchases of goods or services and to specific portions or features of the Site, including contests, promotions or other similar features, all of which terms are made a part of these Terms of Use by this reference. You agree to abide by such other terms and conditions, including where applicable representing that you are of sufficient legal age to use or participate in such service or feature. If there is a conflict between these Terms of Use and the terms posted for or applicable to a specific portion of the Site or for any service offered on or through the Site, the latter terms shall control with respect to your use of that portion of the Site or the specific service.</p>
+    
+    <p>Beisance’s obligations, if any, with regard to its products and services are governed solely by the agreements pursuant to which they are provided, and nothing on this Site should be construed to alter such agreements.</p>
+    
+    <p>Beisance may make changes to any products or services offered on the Site, or to the applicable prices for any such products or services, at any time, without notice. The materials on the Site with respect to products and services may be out of date, and Beisance makes no commitment to update the materials on the Site with respect to such products and services.</p>
+    
+    <h2 class="wp-block-heading">Accounts, Passwords and Security</h2>
+    
+    <p>Certain features or services offered on or through the Site may require you to open an account (including setting up a Beisance ID and password). You are entirely responsible for maintaining the confidentiality of your account information, including your password, and for any and all activity that occurs under your account. You agree to notify Beisance immediately of any unauthorized use of your account or password, or any other breach of security. However, you may be held liable for losses incurred by Beisance or any other user of or visitor to the Site due to someone else using your Beisance ID, password or account.</p>
+    
+    <p>You may not use anyone else’s Beisance ID, password or account at any time without the express permission and consent of the holder of that Beisance ID, password or account. Beisance cannot and will not be liable for any loss or damage arising from your failure to comply with these obligations.</p>
+    
+    <h2 class="wp-block-heading">Privacy</h2>
+    
+    <p>Beisance’s Privacy Policy applies to use of this Site, and its terms are made a part of these Terms of Use by this reference. To view Beisance’s Privacy Policy, <a href="http://www.beisance/privacy">click here</a>. Additionally, by using the Site, you acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information you send to the Site may be read or intercepted by others, even if there is a special notice that a particular transmission (for example, credit card information) is encrypted.</p>
+    
+    <h2 class="wp-block-heading">Links to Other Sites and to the Beisance Site</h2>
+    
+    <p>This Site may contain links to other independent third-party Web sites (“Linked Sites”). These Linked Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under Beisance’s control, and Beisance is not responsible for and does not endorse the content of such Linked Sites, including any information or materials contained on such Linked Sites. You will need to make your own independent judgment regarding your interaction with these Linked Sites.</p>
+    
+    <h2 class="wp-block-heading">Disclaimers</h2>
+    
+    <p>BEISANCE DOES NOT PROMISE THAT THE SITE OR ANY CONTENT, SERVICE OR FEATURE OF THE SITE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS WILL BE CORRECTED, OR THAT YOUR USE OF THE SITE WILL PROVIDE SPECIFIC RESULTS. THE SITE AND ITS CONTENT ARE DELIVERED ON AN “AS-IS” AND “AS-AVAILABLE” BASIS. ALL INFORMATION PROVIDED ON THE SITE IS SUBJECT TO CHANGE WITHOUT NOTICE. BEISANCE CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM THE SITE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES. BEISANCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF ACCURACY, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. BEISANCE DISCLAIMS ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE SITE AND/OR ANY BEISANCE SERVICES. YOU ASSUME TOTAL RESPONSIBILITY FOR YOUR USE OF THE SITE AND ANY LINKED SITES. YOUR SOLE REMEDY AGAINST BEISANCE FOR DISSATISFACTION WITH THE SITE OR ANY CONTENT IS TO STOP USING THE SITE OR ANY SUCH CONTENT. THIS LIMITATION OF RELIEF IS A PART OF THE BARGAIN BETWEEN THE PARTIES.</p>
+    
+    <p>The above disclaimer applies to any damages, liability or injuries caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, communication line failure, theft or destruction of or unauthorized access to, alteration of, or use, whether for breach of contract, tort, negligence or any other cause of action.<br />Beisance reserves the right to do any of the following, at any time, without notice:</p>
+    
+    <ul>
+    <li>To modify, suspend or terminate operation of or access to the Site, or any portion of the Site, for any reason;</li>
+    <li>To modify or change the Site, or any portion of the Site, and any applicable policies or terms; and</li>
+    <li>To interrupt the operation of the Site, or any portion of the Site, as necessary to perform routine or non-routine maintenance, error correction, or other changes.</li>
+    </ul>
+    
+    <h2 class="wp-block-heading">Limitation of Liability</h2>
+    
+    <p>Except where prohibited by law, in no event will Beisance be liable to you for any indirect, consequential, exemplary, incidental or punitive damages, including lost profits, even if Beisance has been advised of the possibility of such damages.</p>
+    
+    <p>If, notwithstanding the other provisions of these Terms of Use, Beisance is found to be liable to you for any damage or loss which arises out of or is in any way connected with your use of the Site or any Content, Beisance’s liability shall in no event exceed the greater of (1) the total of any subscription or similar fees with respect to any service or feature of or on the Site paid in the one month prior to the date of the initial claim made against Beisance (but not including the purchase price for any Beisance hardware or software products or Services or any Beisance Support or similar support program), or (2) NGN100.00/US $0.683. Some jurisdictions do not allow limitations of liability, so the foregoing limitation may not apply to you.</p>
+    
+    <h2 class="wp-block-heading">Indemnity</h2>
+    
+    <p>You agree to indemnify and hold Beisance, its officers, directors, shareholders, predecessors, successors in interest, employees, agents, subsidiaries and affiliates, harmless from any demands, loss, liability, claims or expenses (including attorneys’ fees), made against Beisance by any third party due to or arising out of or in connection with your use of the Site.</p>
+    
+    <h2 class="wp-block-heading">Violation of These Terms of Use</h2>
+    
+    <p>Beisance may disclose any information we have about you (including your identity) if we determine that such disclosure is necessary in connection with any investigation or complaint regarding your use of the Site, or to identify, contact or bring legal action against someone who may be causing injury to or interference with (either intentionally or unintentionally) Beisance’s rights or property, or the rights or property of visitors to or users of the Site, including Beisance’s customers. Beisance reserves the right at all times to disclose any information that Beisance deems necessary to comply with any applicable law, regulation, legal process or governmental request. Beisance also may disclose your information when Beisance determines that applicable law requires or permits such disclosure, including exchanging information with other companies and organizations for fraud protection purposes.<br />You acknowledge and agree that Beisance may preserve any transmittal or communication by you with Beisance through the Site or any service offered on or through the Site, and may also disclose such data if required to do so by law or Beisance determines that such preservation or disclosure is reasonably necessary to (1) comply with legal process, (2) enforce these Terms of Use, (3) respond to claims that any such data violates the rights of others, or (4) protect the rights, property or personal safety of Beisance, its employees, users of or visitors to the Site, and the public.</p>
+    
+    <p>You agree that Beisance may, in its sole discretion and without prior notice, terminate your access to the Site and/or block your future access to the Site if we determine that you have violated these Terms of Use or other agreements or guidelines which may be associated with your use of the Site. You also agree that any violation by you of these Terms of Use will constitute an unlawful and unfair business practice, and will cause irreparable harm to Beisance, for which monetary damages would be inadequate, and you consent to Beisance obtaining any injunctive or equitable relief that Beisance deems necessary or appropriate in such circumstances. These remedies are in addition to any other remedies Beisance may have at law or in equity.</p>
+    
+    <p>You agree that Beisance may, in its sole discretion and without prior notice, terminate your access to the Site, for cause, which includes (but is not limited to)</p>
+    
+    <ul>
+    <li>Requests by law enforcement or other government agencies,</li>
+    <li>A request by you (self-initiated account deletions),</li>
+    <li>Discontinuance or material modification of the Site or any service offered on or through the Site, or</li>
+    <li>Unexpected technical issues or problems.</li>
+    </ul>
+    
+    <p>If Beisance does take any legal action against you as a result of your violation of these Terms of Use, Beisance will be entitled to recover from you, and you agree to pay, all reasonable attorneys’ fees and costs of such action, in addition to any other relief granted to Beisance. You agree that Beisance will not be liable to you or to any third party for termination of your access to the Site as a result of any violation of these Terms of Use.</p>
+    
+    <h2 class="wp-block-heading">Governing Law; Dispute Resolution</h2>
+    
+    <p>You agree that all matters relating to your access to or use of the Site, including all disputes, will be governed by the laws of the Federal Republic of Nigeria and by the laws of the State of Lagos without regard to its conflicts of laws provisions. You agree to the personal jurisdiction by and venue in the State and Federal courts in Lagos, and waive any objection to such jurisdiction or venue. Any claim under these Terms of Use must be brought within one (1) year after the cause of action arises, or such claim or cause of action is barred. No recovery may be sought or received for damages other than out-of-pocket expenses, except that the prevailing party will be entitled to costs and attorneys’ fees. In the event of any controversy or dispute between Beisance and you arising out of or in connection with your use of the Site, the parties shall attempt, promptly and in good faith, to resolve any such dispute. If we are unable to resolve any such dispute within a reasonable time (not to exceed thirty (30) days), then either party may submit such controversy or dispute to mediation. If the dispute cannot be resolved through mediation, then the parties shall be free to pursue any right or remedy available to them under applicable law.</p>
+    
+    <h2 class="wp-block-heading">Void Where Prohibited</h2>
+    
+    <p>Beisance administers and operates the www.beisance.com Site from its location in Isolo, Lagos Nigeria; other Beisance sites may be administered and operated from various locations outside the Federal Republic of Nigeria. Although the Site is accessible worldwide, not all features, products or services discussed, referenced, provided or offered through or on the Site are available to all persons or in all geographic locations, or appropriate or available for use outside the Federal Republic of Nigeria. Beisance reserves the right to limit, in its sole discretion, the provision and quantity of any feature, product or service to any person or geographic area. Any offer for any feature, product or service made on the Site is void where prohibited. If you choose to access the Site from outside the Federal Republic of Nigeria, you do so on your own initiative and you are solely responsible for complying with applicable local laws.</p>
+    
+    <h2 class="wp-block-heading">Miscellaneous</h2>
+    
+    <p>You may not use or export or re-export any Content or any copy or adaptation of such Content, or any product or service offered on the Site, in violation of any applicable laws or regulations, including without limitation Nigeria’s export laws and regulations.</p>
+    
+    <p>If any of the provisions of these Terms of Use are held by a court or other tribunal of competent jurisdiction to be void or unenforceable, such provisions shall be limited or eliminated to the minimum extent necessary and replaced with a valid provision that best embodies the intent of these Terms of Use, so that these Terms of Use shall remain in full force and effect. These Terms of Use constitute the entire agreement between you and Beisance with regard to your use of the Site, and any and all other written or oral agreements or understandings previously existing between you and Beisance with respect to such use are hereby superseded and cancelled. Beisance will not accept any counter-offers to these Terms of Use, and all such offers are hereby categorically rejected. Beisance’s failure to insist on or enforce strict performance of these Terms of Use shall not be construed as a waiver by Beisance of any provision or any right it has to enforce these Terms of Use, nor shall any course of conduct between Beisance and you or any other party be deemed to modify any provision of these Terms of Use. These Terms of Use shall not be interpreted or construed to confer any rights or remedies on any third parties.</p>
+    
+    <p>Beisance provides access to Beisance international data and, therefore, may contain references or cross references to Beisance products, programs and services that are not announced in your country. Such reference does not imply that Beisance in your country intends to announce such products, programs or services.</p>
+    
+    <h2 class="wp-block-heading">Feedback and Information</h2>
+    
+    <p>Any feedback you provide at this site shall be deemed to be non-confidential. Beisance shall be free to use such information on an unrestricted basis.</p>
+    
+    <p>The information contained in this web site is subject to change without notice. Copyright © Beisance Ltd. All rights reserved.</p>
+    
+    <p>Beisance Ltd., 74 Ire Akari Estate Road, Isolo, Lagos, Nigeria. P.0.Box 53365, Falomo Ikoyi SW, Lagos, Nigeria.</p>
+    <p>Beisance UAE., Abu Dhabi Chamber of Commerce &amp; Industry, Abu Dhabi Chamber Building, Corniche Street. Abu Dhabi, United Arab Emirates.</p>
+            </div>
+        </div>
+        
+    </div><!-- end #each-post-->			</div>	
+            </div><!--end #socket-main-content-page-->
+        </div><!--end #socket-main-content-->				
+    </div><!--end #socket-main-->
+
+<!--downnav-->
+<div id="downnav"><!-- start #downnav-->
+	<div id="downnav-content"><!-- start #downnav-content-->
+		<div id="downnav-call-to-action" class="dca dca-m dca-d">
+			Beisance. It's time to build.		
+		</div>
+		<div id="downnav-menu" class="dnm dnm-m dnm-d">
+			<ul id="menu-downnav" class="menu"><li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-1908"><a href="./" aria-current="page">The Firm</a></li>
+			<li id="menu-item-1911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1911"><a href="./privacy-policy.html">Privacy Policy</a></li>
+			<li id="menu-item-1910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="./legal.html">Legal</a></li>
+			<li id="menu-item-1912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1912"><a href="./sitemap.html">Sitemap</a></li>
+			</ul>		
+		</div>
+		<div id="downnav-copyright" class="dncr dncr-m dncr-d">
+			<a href="https://www.beisance.com">Beisance</a>.			Copyright &#169; 2024. All rights reserved.
+		</div>
+	</div><!-- end #downnav-content-->
+</div><!-- end #downnav-->
+
+</body>
+
+</html>
