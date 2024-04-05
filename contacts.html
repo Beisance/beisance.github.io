@@ -48,7 +48,7 @@
 <meta name="format-detection" content="telephone=no">
 
 <title>
-Beisance Contacts
+Contacts
 </title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="https://beisance.com"/>
@@ -57,6 +57,159 @@ Beisance Contacts
 
 <body class="mb">
 
+<!-- js scripts -->
+<script src="js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+<script src="js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
+<script src="js/js-window-resize.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-search.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-mobile-menu.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close-on-scroll.js" integrity="" crossorigin="anonymous"></script>
+
+<!-- topnav -->
+<div id="header-container-background" class="hcb">
+	<div id="header-container-background-content" class="hcb-content">
+	</div>
+</div>
+
+<div id="header-container" class="hc"><!-- start #header-container-->
+	<div id="header-container-content" class="hcc hcc-m hcc-d">
+		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
+			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="img/header/topnav-menu-button.png">
+		</div>
+		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
+			<a href ="./">
+				<img src="img/header/logo.png"/>
+			</a>
+		</div><!-- end #logo-->
+		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
+			<div id="search-menu-close">
+				<a href ="#" onclick="return false;">
+					<img id="search-menu-close-img" onclick="searchMenuclose()" class="smcl" src="img/header/search-menu-close.png">
+				</a>
+			</div>
+			<!-- search form desktop-->
+            <div id="search-form-desktop">
+                <!-- class definition legend in comments below this-->
+                <!-- tnsfb = 'topnav search form"-->
+                <!-- sb = 'search-box"-->
+                <!-- si = 'search input"-->
+                <!-- search submit is placed before search box, for desktop-->
+                <form method="get" id="search-form-desktop" class="tnsf tnsf-m" action="./">
+                    <input type="image" id="search-submit-desktop" src="img/header/search-icon.png" value="Search" />	
+                    <input type="text"  tabindex="0" placeholder="Search Beisance" value="" name="s" id="search-box-desktop" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />	
+                </form>
+			</div>
+		</div><!-- end #search-->
+		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
+			<ul id="menu-topnav" class="menu">
+                <li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="./">The Firm</a></li>
+                <li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="./contacts.html">Contacts</a></li>
+                <li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="./support">Support</a></li>
+                <li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+            </ul>
+		</div><!-- end #topnav-->
+	</div>
+	
+	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
+		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
+			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+				<div id="mobile-header" class="mh">
+					<div id="mobile-header-content" class="mhc"">
+						<div id="mobile-logo" class="ml">
+							<a href ="./">
+								<img id="logo-mobile-image" src="img/header/logo-none.png"/>
+							</a>
+						</div>
+						<div id="mobile-menu-button-close" class="mmbc">
+							<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="img/header/mobile-menu-close.png">
+						</div>
+					</div>
+				</div>
+				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
+					<span class="smi">
+                        <ul id="menu-topnav-1" class="menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="http://localhost/bsx/the-firm/">The Firm</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="http://localhost/bsx/contacts/">Contacts</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="http://localhost/bsx/support/">Support</a></li>
+                            <li class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+                        </ul>
+					</span>
+				</div>
+				<div id="search-mobile" class="tnsm tnsm-m tnsm-d"><!-- start #search-->
+					<!-- search form mobile-->
+                    <div id="search-form-mobile">
+						<!-- class definition legend in commments below this-->
+                        <!-- tnsfb = 'topnav search form"-->
+                        <!-- sb = 'search-box"-->
+                        <!-- si = 'search input"-->
+                        <form method="get" id="sfm" class="tnsf tnsf-m" action="./">	
+                            <div id="search-container">
+                            <input type="image" id="search-submit-mobile" src="img/header/search-icon.png" value="Search" />	
+                            <input type="text" placeholder="Search Beisance" value="" name="s" id="search-box-mobile" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />
+                            </div>
+                        </form>
+					</div>
+				</div><!-- end #search-->
+			</div>	
+		</div>
+	</div><!-- end #topnav-mobile-menu-->	
+	<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
+	</div>
+</div><!-- end #header-container-->
+
+<!-- contacts content-->
+<div id="socket-main" class="sm-page"><!--start #socket-main-->	
+	<div id="socket-main-content" class="smc-frontpage"><!--start #socket-main-content-->		
+		<div id="socket-main-content-page" class="smcp"><!--start #socket-main-content-page-->	
+			<div id="socket-main-content-page-content" class="smcpc">
+				<div id="socket-header-stack-delimiter-page" class="shsdp">
+				</div>
+				<div id="socket-header" class="sh-page">
+				  Contacts				
+                </div>
+				<div id="page-showcase" class="ps">
+					
+	<div id="page-showcase"><!-- start #page-showcase-->
+		<div id="page-showcase-content" class="psc psc-m psc-d"><!-- start #page-showcase-content-->
+			<a href="./">
+				<picture id="picture-showcase">
+                    <source media="(max-width: 1099px)" srcset="img/showcase/page/page-showcase-3-contacts-960w.png">
+                    <source media="(min-width: 800px)" srcset="img/showcase/page/page-showcase-3-contacts-1920w.png">
+                    <img src="img/showcase/page/page-showcase-3-contacts-1920w.png" alt="Contact Beisance">
+                  </picture>		
+			</a>	
+		</div><!-- end #page-showcase-content-->
+	</div><!-- end #page-showcase-->
+</div><!-- end #socket-main-->
+
+<!-- post content-->
+<div id="each-post-news-stack" class="post epns-page" id="post-22"><!-- start #each-post-->
+		
+	<div id="each-post-summary-news-stack">
+		<div id="each-post-excerpt-single">
+			<h2>Lagos HQ</h2>
+            <p>74 Ire Akari Estate Road, Isolo, Lagos, Nigeria.</p>
+            <p><a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;:&#x63;&#x6f;n&#116;&#x61;c&#116;&#x40;b&#101;&#x69;s&#97;&#x6e;c&#101;&#x2e;&#x63;&#111;&#x6d;">c&#111;&#x6e;&#x74;&#x61;c&#116;&#64;&#x62;&#x65;i&#115;&#97;&#x6e;&#x63;e&#46;&#99;&#x6f;&#x6d;</a></p>
+            <p><a href="tel:+234-703-354-4861">+234-703-354-4861</a></p>
+            <h2>UAE</h2>
+            <p>Abu Dhabi Chamber of Commerce &amp; Industry, Abu Dhabi Chamber Building, Corniche Street. Abu Dhabi, United Arab Emirates.</p>
+            <p><a href="&#109;&#x61;&#x69;l&#116;&#x6f;:&#99;&#x6f;n&#116;&#x61;c&#116;&#x40;&#x62;&#101;&#x69;&#x73;a&#110;&#x63;e&#46;&#x63;o&#109;">&#99;&#x6f;n&#116;&#x61;c&#116;&#x40;b&#x65;&#x69;&#115;&#x61;n&#99;&#x65;&#46;&#99;&#x6f;m</a></p>
+            <p><a href="tel:+971-58-282-3411">+971-58-282-3411</a></p>
+</div>
+
+		</div>
+	</div>
+	
+	
+	
+</div><!-- end #each-post-->			</div>	
+		</div><!--end #socket-main-content-page-->
+	</div><!--end #socket-main-content-->				
+</div><!--end #socket-main-->
 
 
 
