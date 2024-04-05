@@ -3,8 +3,7 @@
 //We are echoing the javascript in php in order to utilize the WorPress function. This isn't the standard way to do this. We will fix our approach in a future update. - O J 31/12/18.
 ?>
 
-<?php
-	echo ('
+
 	<script>
 	//Switching search menu off on window scroll
 	$(window).scroll(function(){
