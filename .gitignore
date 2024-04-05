@@ -1,0 +1,11 @@
+*.svg
+*.dev.css
+.dep/
+.dev/
+adsense/
+fonts/
+pages-post/
+/inc/google-analytics.php
+*.ffs_lock
+podcast/
+ads.txt
