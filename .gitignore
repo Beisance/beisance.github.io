@@ -1,7 +1,7 @@
 *.svg
 *.dev.css
 .dep/
-.dev/
+*dev/
 adsense/
 fonts/
 pages-post/

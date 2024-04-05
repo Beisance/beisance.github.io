@@ -1,9 +1,228 @@
-Hello World
-<br>
---
-<br>
-Site is being updated 05-04-24
-<br>
---
-<br>
-Beisance Dev.
+<?php
+/*
+ * @package WordPress
+ * @subpackage Beisance-Intelix Custom Theme For Beisance-BSX
+ */
+?>
+<!-- @package WordPress adapted -->
+<!-- @subpackage adapted Beisance-Intelix Custom Theme For Beisance-BSX -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="shortcut icon" href="img/header/favicons/favicon.png"/>
+<link href="img/header/favicons/favicon-touch-icon-iphone-114x114.png" rel="apple-touch-icon" />
+<link href="img/header/favicons/favicon-normal-128x128.png" rel="icon" sizes="128x128" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="img/header/favicons/favicon-touch-icon-ipad-retina-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="img/header/favicons/favicon-touch-icon-iphone-retina-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="img/header/favicons/favicon-hires-192x192.png" rel="icon" sizes="192x192" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!-- our foray into web type/fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+
+<!-- social sharing -->
+<meta property="og:title" content="Beisance"/>
+<meta property="og:description" content="Beisance"/>
+<meta property="og:type" content="image/png">
+<meta property="og:url" content="https://beisance.com">
+<meta property="og:image" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:url" content="https://beisance.com/img/social-media/social-sharing/social-sharing.png"/>
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1920">
+<meta property="og:image:alt" content="Beisance logo"/>
+
+<!-- browser header color customization -->
+<meta name="theme-color" content="#fff1e5" />
+<!-- other -->
+<meta name="color-scheme" content="light dark">
+<meta charset="<?php bloginfo( 'charset' ); ?>"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="BSX">
+<meta name="author" content="Beisance Intelix">
+<meta name="keywords" content="global infrastructure, transportation, housing, digital technology, finance, ecommerce and retail, energy, food and beverages, uae, ras al-khaimah, rak, abu dhabi"/>
+<meta name="format-detection" content="telephone=no">
+
+<title>
+Beisance
+</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://beisance.com"/>
+
+</head>
+
+<body class="mb">
+
+<!-- js scripts -->
+<script src="js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+<script src="js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
+<script src="js/js-window-resize.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-mobile-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-open.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-search.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-outside-popup-click-mobile-menu.js" integrity="" crossorigin="anonymous"></script>
+<script src="js/js-search-menu-close-on-scroll.js" integrity="" crossorigin="anonymous"></script>
+
+<!-- topnav -->
+<div id="header-container-background" class="hcb">
+	<div id="header-container-background-content" class="hcb-content">
+	</div>
+</div>
+
+<div id="header-container" class="hc"><!-- start #header-container-->
+	<div id="header-container-content" class="hcc hcc-m hcc-d">
+		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
+			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="img/header/topnav-menu-button.png">
+		</div>
+		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
+			<a href ="./">
+				<img src="img/header/logo.png"/>
+			</a>
+		</div><!-- end #logo-->
+		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
+			<div id="search-menu-close">
+				<a href ="#" onclick="return false;">
+					<img id="search-menu-close-img" onclick="searchMenuclose()" class="smcl" src="img/header/search-menu-close.png">
+				</a>
+			</div>
+			<!-- search form desktop-->
+            <div id="search-form-desktop">
+                <!-- class definition legend in comments below this-->
+                <!-- tnsfb = 'topnav search form"-->
+                <!-- sb = 'search-box"-->
+                <!-- si = 'search input"-->
+                <!-- search submit is placed before search box, for desktop-->
+                <form method="get" id="search-form-desktop" class="tnsf tnsf-m" action="./">
+                    <input type="image" id="search-submit-desktop" src="img/header/search-icon.png" value="Search" />	
+                    <input type="text"  tabindex="0" placeholder="Search Beisance" value="" name="s" id="search-box-desktop" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />	
+                </form>
+			</div>
+		</div><!-- end #search-->
+		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
+			<ul id="menu-topnav" class="menu">
+                <li id="menu-item-1415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="http://localhost/bsx/the-firm/">The Firm</a></li>
+                <li id="menu-item-1874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="http://localhost/bsx/contacts/">Contacts</a></li>
+                <li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="http://localhost/bsx/support/">Support</a></li>
+                <li id="menu-item-1902" class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+            </ul>
+		</div><!-- end #topnav-->
+	</div>
+	
+	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
+		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
+			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+				<div id="mobile-header" class="mh">
+					<div id="mobile-header-content" class="mhc"">
+						<div id="mobile-logo" class="ml">
+							<a href ="./">
+								<img id="logo-mobile-image" src="img/header/logo-none.png"/>
+							</a>
+						</div>
+						<div id="mobile-menu-button-close" class="mmbc">
+							<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="img/header/mobile-menu-close.png">
+						</div>
+					</div>
+				</div>
+				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
+					<span class="smi">
+                        <ul id="menu-topnav-1" class="menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1415"><a href="http://localhost/bsx/the-firm/">The Firm</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1874"><a href="http://localhost/bsx/contacts/">Contacts</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="http://localhost/bsx/support/">Support</a></li>
+                            <li class="menu-item menu-item-type-post_type searchMenuOpen menu-item-type-custom menu-item-object-custom menu-item-1902"><a href="#!">Search</a></li>
+                        </ul>
+					</span>
+				</div>
+				<div id="search-mobile" class="tnsm tnsm-m tnsm-d"><!-- start #search-->
+					<!-- search form mobile-->
+                    <div id="search-form-mobile">
+						<!-- class definition legend in commments below this-->
+                        <!-- tnsfb = 'topnav search form"-->
+                        <!-- sb = 'search-box"-->
+                        <!-- si = 'search input"-->
+                        <form method="get" id="sfm" class="tnsf tnsf-m" action="./">	
+                            <div id="search-container">
+                            <input type="image" id="search-submit-mobile" src="img/header/search-icon.png" value="Search" />	
+                            <input type="text" placeholder="Search Beisance" value="" name="s" id="search-box-mobile" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />
+                            </div>
+                        </form>
+					</div>
+				</div><!-- end #search-->
+			</div>	
+		</div>
+	</div><!-- end #topnav-mobile-menu-->	
+	<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
+	</div>
+</div><!-- end #header-container-->
+
+<!-- the firm content-->
+<div id="socket-main" class="sm-page"><!--start #socket-main-->	
+	<div id="socket-main-content" class="smc-frontpage"><!--start #socket-main-content-->		
+		<div id="socket-main-content-page" class="smcp"><!--start #socket-main-content-page-->	
+			<div id="socket-main-content-page-content" class="smcpc">
+				<div id="socket-header-stack-delimiter-page" class="shsdp">
+				</div>
+				<div id="socket-header" class="sh-page">
+					  The Firm				</div>
+				<div id="page-showcase" class="ps">
+					
+	<div id="page-showcase"><!-- start #page-showcase-->
+		<div id="page-showcase-content" class="psc psc-m psc-d"><!-- start #page-showcase-content-->
+			<a href="./">
+				<picture id="picture-showcase">
+				<source media="(max-width: 1099px)" srcset="img/showcase/page/page-showcase-1-generic-960w.png">
+				<source media="(min-width: 800px)" srcset="img/showcase/page/page-showcase-1-generic-1920w.png">
+				<img src="img/showcase/page/page-showcase-1-generic-1920w.png" alt="Learn more about Beisance">
+				</picture>		
+			</a>	
+		</div><!-- end #page-showcase-content-->
+	</div><!-- end #page-showcase-->
+</div><!-- end #socket-main-->
+
+<!-- post content-->
+<div id="each-post-news-stack" class="post epns-page" id="post-2"><!-- start #each-post-->
+	<div id="each-post-summary-news-stack">
+		<div id="each-post-excerpt-single">
+				
+			<p>Beisance is building the world by providing technology, capital, expertise and infrastructure for a global economy. Our goal is to solve some of the complex problems that the world faces, from simple starting points. We are headquartered in Lagos, Nigeria, with branches in the United Kingdom and the United Arab Emirates.</p>
+			<h2>Note</h2>
+			<p>Products/services offered will vary by country due to licensing.</p>
+		</div>
+	</div>
+	
+</div><!-- end #each-post-->			
+	</div>	
+		</div><!--end #socket-main-content-page-->
+	</div><!--end #socket-main-content-->				
+</div><!--end #socket-main-->
+
+<!--downnav-->
+<div id="downnav"><!-- start #downnav-->
+	<div id="downnav-content"><!-- start #downnav-content-->
+		<div id="downnav-call-to-action" class="dca dca-m dca-d">
+			Beisance. It's time to build.		
+		</div>
+		<div id="downnav-menu" class="dnm dnm-m dnm-d">
+			<ul id="menu-downnav" class="menu"><li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-1908"><a href="./" aria-current="page">The Firm</a></li>
+			<li id="menu-item-1911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1911"><a href="./privacy-policy.html">Privacy Policy</a></li>
+			<li id="menu-item-1910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="./legal.html">Legal</a></li>
+			<li id="menu-item-1912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1912"><a href="./sitemap.html">Sitemap</a></li>
+			</ul>		
+		</div>
+		<div id="downnav-copyright" class="dncr dncr-m dncr-d">
+			<a href="https://www.beisance.com">Beisance</a>.			Copyright &#169; 2024. All rights reserved.
+		</div>
+	</div><!-- end #downnav-content-->
+</div><!-- end #downnav-->
