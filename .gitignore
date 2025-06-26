@@ -1,6 +1,7 @@
 *.svg
 *.dev.css
 .dep/
+.backup/
 *dev/
 adsense/
 fonts/

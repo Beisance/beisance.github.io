@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: BSX-Unified-1-X
 Theme URI: https://www.beisance.com/
 Author: Beisance | Intelix
@@ -30,7 +30,7 @@ body{
 	height: 100%;
 	min-height: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.6;
 	word-spacing: 1px;
 	font-kerning: normal;
@@ -88,7 +88,7 @@ blockquote p{
 }	
 img{
 	border-style:none;
-}
+}  
 a:link{
 	color: #ff6600;
 	text-decoration: none;
@@ -152,7 +152,7 @@ a:hover{
 		/* socket-main-content-slice-1 */
 		/* overall scaling */
 		.smcs1{
-			margin: 10px auto 0;
+			margin: 10px auto 0 auto;
 			width: 80%;
 			max-width: 1250px;
 			overflow: hidden;
@@ -169,26 +169,26 @@ a:hover{
 		/* socket-main-content-slice-2 */	
 		/* Page */
 		.smcp{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 60%;
 			max-width: 1045px;
 			overflow: hidden;
 		}
 		/* latest */
 		 .smcs2{
-			margin: 10px auto 0;
+			margin: 10px auto 0 auto; 
 			width: 100%;
 			padding-top: 10px;
 			background: #f2dfce;
 		 }
 		 .smcs2-search-page{
-			margin: 0 auto;
+			margin: 0 auto 0 auto; 
 			background: #f2dfce;
 		 }
 		 	/* socket-main-content-slice-2-content */
-			/* overall scaling */
+			/* overall scaling */ 
 		 	.smcs2c{
-				margin: 0 auto;
+				margin: 0 auto 0 auto; 
 				width: 80%;
 				max-width: 1250px;
 			 }
@@ -231,8 +231,8 @@ a:hover{
 					max-width: 1250px;
 					background: #000000;
 				}
-		 .smcs2-single{			
-			margin: 0 auto;
+		 .smcs2-single{			 
+			margin: 0 auto 0 auto;
 			width: 60%;
 			max-width: 1045px;
 		 }
@@ -285,7 +285,7 @@ a:hover{
 				width: 100%;
 			}
 				.smcpc{
-					margin: 0 auto;
+					margin: 0 auto 0 auto;
 					width: 90%;
 				}
 			#socket-header{
@@ -307,7 +307,7 @@ a:hover{
 				overflow: hidden;
 			}
 			.smcs1-s1{
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 100%;
 				border-top: 10px solid #000000;
 			}
@@ -320,7 +320,7 @@ a:hover{
 				width: 90%;
 			}	
 			.sw-highlights{
-				margin: 10px auto 0;
+				margin: 10px auto 0 auto;
 				width: 100%;
 				float: none;
 			}
@@ -440,12 +440,12 @@ a:hover{
 		height: auto;
 	}
 	#topnav-mobile-container-content{
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		width: 100%;
 		text-align: left;
 	}
 	#topnav-mobile{
-		margin: 9px auto 0;
+		margin: 9px auto 0 auto;
 		width: 90%;
 		border-top: 10px solid #000000;
 	}
@@ -469,7 +469,7 @@ a:hover{
 	}
 		/* mobile-header-content */
 		.mhc{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 90%;
 		}
 	/* mobile-logo */
@@ -611,7 +611,7 @@ a:hover{
 	}
 	#header-container-content{
 		position: relative;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		width: 90%;
 		max-width: 1250px;
 		overflow: hidden;
@@ -673,18 +673,18 @@ a:hover{
 			#topnav li a:link{
 				display: block;
 				color: #000000;
-				padding-right: 0.7em;
+				padding: 0 0.7em 0 0;
 			}
 			#topnav li a:visited{
 				display: block;
 				color: #000000;
-				padding-right: 0.7em;
+				padding: 0 0.7em 0 0;
 			}
 			#topnav ul li a:hover{
 				display: block;
 				color: #5599ff;
 				text-decoration: none;
-				padding-right: 0.7em;
+				padding: 0 0.7em 0 0;
 			}
 				@media (prefers-color-scheme: dark){
 					#topnav li a:link{
@@ -737,7 +737,7 @@ a:hover{
 				#search-box-desktop{
 					position: relative;
 					margin: 1px 0 0 0;
-					width: 597px;
+ 					width: 597px;
 					height: 36px;
 					padding: 0 20px 0 20px;
 					color: #000000;
@@ -757,7 +757,7 @@ a:hover{
 				display: none;
 			}
 			#search-mobile{
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 90%;
 				height: 40px;
 				padding: 0 1px 0 1px;
@@ -778,7 +778,7 @@ a:hover{
 				float: right;
 			}
 			#search-box-mobile{
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 100%;
 				height: 29px;
 				padding: 5px 30px 5px 10px;
@@ -797,7 +797,7 @@ a:hover{
 				display: none;
 			}
 			#search-mobile{
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 90%;
 				height: 40px;
 				padding: 0 1px 0 1px;
@@ -818,7 +818,7 @@ a:hover{
 				float: right;
 			}
 			#search-box-mobile{
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 100%;
 				height: 29px;
 				padding: 5px 30px 5px 10px;
@@ -862,7 +862,7 @@ a:hover{
 	z-index: 2;
 }
 	#main-showcase-content{
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		position: relative;
 		height: 100%;
 		width: auto;
@@ -896,7 +896,7 @@ a:hover{
 }
 	#page-showcase-content{
 		position: relative;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		max-width: 1045px;
 		overflow: hidden;
 	}
@@ -931,14 +931,14 @@ a:hover{
 /*END overlays */
 /*START playlist */
 .wp-playlist{
-	margin: 0 0 10px 0;
-	border: 1px solid #ff6600;
+	margin: 0 0 10px 0!important;
+	border: 1px solid #ff6600!important;
 }
 .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body{
-	background: #808080;
+	background: #808080!important;
 }
 .wp-playlist-light{
-	background: #ffeeaa;
+	background: #ffeeaa!important;
 }
 /*END playlist */
 /*START page-title-nav */
@@ -950,7 +950,7 @@ a:hover{
 }
 	#page-title-nav-content{
 		position: relative;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		width: 100%;
 		max-width: 1250px;
 		height: 100%;
@@ -971,12 +971,12 @@ a:hover{
 			width: 100%;
 		}
 		.ptlc-front-page{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			padding-bottom: 10px;
 		}
 		.ptlc{
 			position: relative;
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 			max-width: 1250px;
 			height: auto;
@@ -1111,7 +1111,7 @@ a:hover{
 			margin: 5px auto 0 20px;
 		}
 	}	
-/*END Post Stacks */
+/*END  Post Stacks */
 /*START loop */
 #each-post-news-stack{
 	text-align: left;
@@ -1121,11 +1121,11 @@ a:hover{
 		padding: 0 20px 0 20px;
 	}
 	.epns-single{
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		padding: 0 0 0 0;
 	}
 	.epns-page{
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		padding: 0 0 0 0;
 	}
 /* each-post-news-stack-content */
@@ -1162,23 +1162,23 @@ a:hover{
 		}
 		/* start spans */
 		.epts-focus{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 		}
 		.epts-highlights{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 			font-size: 0.9em;
 			line-height: 30px;
 		}
 		.epts-latest{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 			font-size: 1.2em;
 			line-height: 30px;
 		}
 		.epts-single{
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 			max-width: 1045px;
 			color: #000000;
@@ -1238,12 +1238,12 @@ a:hover{
 		overflow: hidden;
 	}
 		.epadt-frontpage{
-			margin-top: 10px;
+			margin-top: 10px auto 0 auto;
 			width: 100%;
 			max-width: 430px;
 		}
 		.epadt-single{
-			margin-top: 5px;
+			margin: 5px auto 0 auto;
 			width: 100%;
 			max-width: 1045px;
 		}
@@ -1272,7 +1272,7 @@ a:hover{
 				color: #4d4d4d;
 			}
 				.epdt-twitter{
-					margin-left: 5px;
+					margin-left: 5px; 
 				}
 					.epdt-twitter a:link{
 						color: #4d4d4d;
@@ -1327,7 +1327,7 @@ a:hover{
 			}
 	#each-post-excerpt{
 		position: relative;
-		margin: -5px auto 10px;
+		margin: -5px auto 10px auto;
 		padding-bottom: 3px;
 		width: 100%;
 		max-width: 1250px;
@@ -1366,7 +1366,7 @@ a:hover{
 	}
 		#post-categories-socket-front-page-feed{
 			position: relative;
-			margin: 10px auto;
+			margin: 10px auto 10px auto;
 			width: 100%;
 			max-width: 1250px;
 		}
@@ -1379,7 +1379,7 @@ a:hover{
 		}
 		.pc-single{
 			position: relative;
-			margin: 0 auto;
+			margin: 0 auto 0 auto;
 			width: 100%;
 			max-width: 1045px;
 			font-family: 'Quantico', sans-serif;
@@ -1388,7 +1388,7 @@ a:hover{
 			.pc-single-span{
 				width: fit-content;
 				width: -moz-fit-content; /* added this line for firefox compatibility */
-				padding: 15px 0 10px 0;
+				padding: 15px 0 10px 0; 
 				display: block;
 			}
 		#post-categories-socket-front-page-feed{
@@ -1508,7 +1508,7 @@ a:hover{
 			float: left;
 		}
 		.epthumb-single{
-			margin: 15px auto 5px;
+			margin: 15px auto 5px auto;
 			max-width: 1920px;
 			height: auto;
 		}
@@ -1519,7 +1519,7 @@ a:hover{
 			}
 		@media screen and (max-width: 849px){
 			.pc-single-span{
-				padding: 10px 0 0 0;	
+				padding: 10px 0 0 0; 
 			}	
 			.epns-1-latest{
 				width: 59%;
@@ -1589,7 +1589,7 @@ a:hover{
 /* Other */	
 	#each-post-content{
 		position: relative;
-		margin: 20px auto 25px;
+		margin: 20px auto 25px auto;
 		width: 100%;
 		max-width: 1045px;
 		font-size: 1em;
@@ -1597,7 +1597,7 @@ a:hover{
 		overflow: hidden;
 	}
 		#each-post-content img{
-			margin: 10px auto;
+			margin: 10px auto 10px auto;
 			width: 100%;
 			height: auto;
 			box-sizing: border-box;
@@ -1750,7 +1750,7 @@ a:hover{
 	width: 100%;
 }	
 	#no-post-message-content{
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		padding: 10px 0 10px 0;
 		width: 100%;
 		max-width: 1250px;
@@ -1764,7 +1764,7 @@ a:hover{
 }
 	#bread-nav-content{
 		position: relative;
-		margin: 10px auto 0;
+		margin: 10px auto 0 auto;
 		width: 100%;
 		max-width: 1250px;
 		height: auto;
@@ -1815,7 +1815,7 @@ a:hover{
 /*START Contact Form 7 customizations */
 .grey-text{
 	margin: 15px 0 0 0;
-	width: 100%;
+	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
@@ -1829,7 +1829,7 @@ a:hover{
 	}
 .text-area{
 	margin: 15px 0 0 0;
-	width: 100%;
+	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
@@ -1842,7 +1842,7 @@ a:hover{
 		}
 	}
 .drop-down{
-	width: 100%;
+	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
@@ -1855,7 +1855,7 @@ a:hover{
 	}
 .wpcf7-date{
 	margin: 5px 0 0 0;
-	width: 50%;
+	width: 50%; 
 	max-width: 160px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
@@ -1863,7 +1863,7 @@ a:hover{
 	border: 1px solid #b3b3b3;
 }	
 .multi-box{
-	width: 100%;
+	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
@@ -1897,7 +1897,7 @@ a:hover{
 	padding: 5px 10px 5px 10px;
 	margin: 5px 0 0 0;
 	border: 1px solid #b3b3b3;
-	width: 100%;
+	width: 100%; 
 	max-width: 120px;
 	background: none;
 }
@@ -1906,12 +1906,12 @@ a:hover{
 	padding: 5px 10px 5px 10px;
 	margin: 5px 0 0 0;
 	border: 1px solid #b3b3b3;
-	width: 100%;
+	width: 100%; 
 	max-width: 120px;
 	background: none;
 }
 input[type="file"] {
- 
+    size: 5px;
 }
 .wpcf7 p{
 	margin: 5px 0 20px 0;
@@ -1922,7 +1922,7 @@ div.wpcf7-form {
 	padding: 0;
 }
 .wpcf7-list-item {
-	margin: 0;
+	margin: 0 0 0 5px;
 	padding: 0 0 0 0;
 	display: block;
 }
@@ -2008,7 +2008,7 @@ div.wpcf7-form {
 				padding-bottom: 2px;
 			}
 			.smp-ssh-m{
-				margin-top: 5px;
+				margin-top: 5px; 
 			}
 		}
 		@media screen and (min-width:492px){
@@ -2035,7 +2035,7 @@ div.wpcf7-form {
 	background: #262a33;
 }
 	#downnav-content{
-		margin: 0 auto 25px;
+		margin: 0 auto 25px auto;
 		width: 90%;
 		max-width: 1250px;
 		text-align: left;
