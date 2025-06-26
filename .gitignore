@@ -1,8 +1,9 @@
 *.svg
 *.dev.css
 .dep/
-.backup/
+.exp/
 *dev/
+.backup/
 adsense/
 fonts/
 pages-post/
